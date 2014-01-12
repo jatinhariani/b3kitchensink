@@ -1,0 +1,21 @@
+{
+  "name": "b3kitchensink",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jatinhariani/b3kitchensink",
+  "authors": [
+    "jatin <jtnh321@gmail.com>"
+  ],
+  "description": "Kitchen sink for Bootstrap 3",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.3"
+  }
+}
