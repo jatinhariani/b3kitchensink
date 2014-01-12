@@ -3,6 +3,14 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
+        concat: {
+            dist: {
+                src: [
+                    'bower_components/bootstrap/dist/js/bootstrap.js'
+                ],
+                dest: 'app/js/main.js'
+            }
+        },
         less: {
             development: {
                 files: {
@@ -29,8 +37,9 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    grunt.registerTask('default', ['less', 'watch']);
+    grunt.registerTask('default', ['concat', 'less', 'watch']);
 
 };
